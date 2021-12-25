@@ -1,0 +1,51 @@
+.title {
+  padding: 40px 0 105px;
+  @include media-mobile {
+    padding-bottom: 83px;
+  }
+
+  &__img-comp {
+    display: inline;
+    @include media-mobile {
+      display: none;
+    }
+  }
+  &__img-mobile {
+    display: none;
+    @include media-mobile {
+      display: inline;
+      padding-left: 29px;
+    }
+  }
+
+  &__info {
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    @include media-mobile {
+      display: block;
+      padding: 0 0 37px 26px;
+    }
+    &__name {
+      @include font(4.7rem, 5.9rem, bold);
+      @include media-mobile {
+        padding-bottom: 23px;
+      }
+    }
+    &__profession {
+      padding-bottom: 20px;
+      @include font(1.8rem, 2.2rem, 400);
+    }
+
+    &__language {
+      color: $color-navigation;
+      transform: rotate(-90deg);
+      margin: 0 -25px 40px 0;
+      @include font(1.6rem, 2rem, 400);
+      @include media-mobile {
+        display: none;
+      }
+    }
+  }
+}

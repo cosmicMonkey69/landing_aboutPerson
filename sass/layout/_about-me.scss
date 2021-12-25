@@ -1,0 +1,14 @@
+.about-me {
+  background-color: $color-about-me_background;
+  &__wrapper {
+    padding: 120px 220px 107px;
+    @include media-mobile {
+      padding: 81px 29px 76px;
+    }
+  }
+  &__text {
+    text-align: center;
+    padding-top: 40px;
+    @include font(1.8rem, 2.2rem, 400);
+  }
+}

@@ -1,0 +1,27 @@
+.portfolio {
+  background-color: $color-about-me_background;
+  &__wrapper {
+    padding: 113px 0 43px;
+    @include media-mobile {
+      padding: 71px 29px;
+    }
+  }
+  &__img {
+    padding: 46px 0;
+    @include media-mobile {
+      padding: 65px 0 33px;
+      width: 316px;
+      height: 271px;
+    }
+  }
+  &__link {
+    display: block;
+    padding-bottom: 53px;
+    @include media-mobile {
+      padding-bottom: 12px;
+    }
+    @include font(1.8rem, 2.2rem, 400);
+    text-align: center;
+    color: $color-text;
+  }
+}

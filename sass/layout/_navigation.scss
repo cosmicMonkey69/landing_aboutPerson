@@ -1,0 +1,24 @@
+.navigation {
+  padding: 33px 0;
+  border-bottom: solid 1px $color-navigation;
+  @include media-mobile {
+    border-bottom: none;
+    display: none;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__link {
+    list-style: none;
+    @include font(1.8rem, 2.2rem, 400);
+  }
+}
+.navigation__link > a {
+  text-decoration: none;
+  color: $color-navigation;
+  &:hover {
+    color: $color-navigation_hover;
+  }
+}

@@ -1,0 +1,43 @@
+.contacts {
+  background-color: white;
+  &__wrapper {
+    padding: 114px 0 123px;
+    @include media-mobile {
+      padding: 77px 29px 90px;
+    }
+  }
+  &__text1 {
+    padding: 20px 0 30px;
+    text-align: center;
+    @include font(1.8rem, 2.2rem, 400);
+  }
+  &__position-button {
+    display: flex;
+    justify-content: center;
+  }
+  &__button {
+    width: 180px;
+    @include media-mobile {
+      width: 316px;
+    }
+    height: 42px;
+    border-radius: 20px;
+    border-color: black;
+    color: white;
+    background-color: black;
+    @include font(1.8rem, 2.2rem, 400);
+  }
+  &__social-networks {
+    padding: 86px 300px 45px;
+    @include media-mobile {
+      padding: 48px 29px;
+    }
+    display: flex;
+    justify-content: space-between;
+  }
+  &__text2 {
+    @include font(1.4rem, 1.7rem, 400);
+    text-align: center;
+    color: $color-contacts_text-socialNetwork;
+  }
+}
